@@ -1,0 +1,27 @@
+{
+  "title": "KeepItFresh",
+  "menu": {
+    "about": "Acerca",
+    "features": "Características",
+    "contact": "Contacto"
+  },
+  "slogan": {
+    "title": "Optimiza tu restaurante con inteligencia y frescura",
+    "desc": "KeepItFresh es una solución inteligente que optimiza la gestión de inventario, temperatura y atención al cliente en restaurantes."
+  },
+  "about": {
+    "title": "Nuestra esencia",
+    "desc": "Somos una solución inteligente que se encargará de optimizar la gestión de los inventarios de restaurantes. Además de permitir hacer un seguimiento en tiempo real de los productos, evitando así la pérdida de los alimentos. Una solución óptima la cual facilita el proceso de atención al cliente proporcionándole una herramienta fácil y didáctica."
+  },
+  "features": {
+    "title": "Características",
+    "track": "Seguimiento en tiempo real.",
+    "alerts": "Alertas y notificaciones.",
+    "integration": "Manejo de temperatura y fecha de caducidad.",
+    "notifications": "Gestión del inventario."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "send": "Enviar"
+  }
+}

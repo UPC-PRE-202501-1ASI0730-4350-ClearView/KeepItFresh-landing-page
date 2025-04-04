@@ -1,0 +1,27 @@
+{
+  "title": "KeepItFresh",
+  "menu": {
+    "about": "About",
+    "features": "Features",
+    "contact": "Contact"
+  },
+  "slogan": {
+    "title": "Optimize your restaurant with intelligence and freshness",
+    "desc": "KeepItFresh is an intelligent solution that optimizes inventory management, temperature control, and customer service in restaurants."
+  },
+  "about": {
+    "title": "Our Essence",
+    "desc": "We are an intelligent solution that optimizes restaurant inventory management. It also allows real-time tracking of products, preventing food loss. An optimal solution that facilitates customer service by providing an easy and interactive tool."
+  },
+  "features": {
+    "title": "Features",
+    "track": "Real-time tracking.",
+    "alerts": "Alerts and notifications.",
+    "integration": "Temperature and expiration date monitoring.",
+    "notifications": "Inventory management."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "send": "Send"
+  }
+}

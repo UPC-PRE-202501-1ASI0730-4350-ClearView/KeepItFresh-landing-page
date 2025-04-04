@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+font-family: "Roboto Condensed", sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(img/almacen.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+  color: rgb(51, 184, 255);
+}
+
+.menu .navbar li select {
+  position: relative;
+  float: left;
+}
+.menu .navbar li select {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar li select:hover {
+  color: rgb(51, 184, 255);
+}
+.menu .navbar li button {
+  position: relative;
+  float: left;
+  padding: 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  font-size: 25px;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: rgb(51, 184, 255);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-txt {
+  width: 50%;
+}
+
+.header-txt h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(51, 184, 255);
+  margin-bottom: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header-txt p {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a,
+select,
+button {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
