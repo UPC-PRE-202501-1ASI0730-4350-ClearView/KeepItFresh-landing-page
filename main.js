@@ -47,20 +47,6 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-// contador animado
-function animateCounter(id, endValue) {
-  const el = document.getElementById(id);
-  let start = 0;
-  const duration = 2000;
-  const step = Math.ceil(duration / endValue);
-  const interval = setInterval(() => {
-    start++;
-    el.textContent = start;
-    if (start === endValue) clearInterval(interval);
-  }, step);
-}
-window.addEventListener("load", () => animateCounter("counter-sensores", 120));
-
 // validación de formulario
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -71,16 +57,3 @@ document.getElementById("form").addEventListener("submit", (e) => {
   }
   alert("¡Gracias! Pronto nos pondremos en contacto.");
 });
-
-// modo oscuro
-const darkBtn = document.getElementById("dark-mode-toggle");
-darkBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  localStorage.setItem(
-    "theme",
-    document.body.classList.contains("dark") ? "dark" : "light"
-  );
-});
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-}
