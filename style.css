@@ -106,7 +106,8 @@ body {
 }
 
 .header-txt {
-  width: 50%;
+  text-align: center;
+  width: 100%;
 }
 
 .header-txt h1 {
@@ -142,6 +143,20 @@ button {
 
 section {
   padding: 4rem 2rem;
+}
+
+select option {
+  color: black;
+}
+
+section h2 {
+  color: rgb(51, 184, 255);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+section p {
+  text-align: justify;
+  width: 30%;
 }
 
 .reveal {
