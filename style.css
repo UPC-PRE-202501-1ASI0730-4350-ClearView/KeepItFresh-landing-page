@@ -11,41 +11,58 @@ font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
   list-style: none;
 }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;    
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.header {
-  background-image: url(img/almacen.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  position: relative;
-  min-height: 100vh;
-  align-items: center;
-}
+
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 100px;
+  z-index: 1000;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
 }
-.logo {
+
+.container {
+  max-width: 1200px; /* Mantiene el contenido del menú con un ancho máximo */
+  margin: 0 auto;    /* Centra el contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Asegura que el contenedor ocupe el 100% de su espacio */
+}
+
+.menu.transparent {
+  background-color: rgba(0, 0, 0, 0); /* Fondo transparente cuando no se ha hecho scroll */
+}
+
+.menu.scrolled {
+  background-color: rgb(61, 144, 182, 0.5); /* Fondo semitransparente después del scroll */
+}
+
+.menu .logo {
   color: white;
   font-size: 25px;
   font-weight: bold;
 }
+
+.menu .navbar ul {
+  display: flex;
+  padding: 0;
+}
+
 .menu .navbar ul li {
   position: relative;
-  float: left;
 }
+
 .menu .navbar ul li a {
   font-size: 18px;
   padding: 20px;
@@ -53,14 +70,11 @@ body {
   display: block;
   font-weight: bold;
 }
+
 .menu .navbar ul li a:hover {
   color: rgb(51, 184, 255);
 }
 
-.menu .navbar li select {
-  position: relative;
-  float: left;
-}
 .menu .navbar li select {
   font-size: 18px;
   padding: 20px;
@@ -68,12 +82,12 @@ body {
   display: block;
   font-weight: bold;
 }
+
 .menu .navbar li select:hover {
   color: rgb(51, 184, 255);
 }
+
 .menu .navbar li button {
-  position: relative;
-  float: left;
   padding: 20px;
 }
 
@@ -105,6 +119,17 @@ body {
   display: none;
 }
 
+.header {
+  background-image: url(img/almacen.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+}
+
 .header-txt {
   text-align: center;
   width: 100%;
@@ -126,11 +151,13 @@ body {
   font-weight: 500;
   margin-bottom: 25px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
+
 nav a,
 select,
 button {
@@ -156,7 +183,7 @@ section h2 {
 
 section p {
   text-align: justify;
-  width: 30%;
+  width: 100%;
 }
 
 .reveal {
@@ -164,7 +191,84 @@ section p {
   transform: translateY(30px);
   transition: all 0.6s ease;
 }
+
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.esencia {
+  background-color: #f3f3f3;
+  padding: 25px;
+  margin: 55px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.esencia h2 {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.caracteristicas {
+  background-color: #f3f3f3;
+  padding: 20px;
+  margin: 20px;
+  max-width: none;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.caracteristicas h2 {
+  text-align: start;
+  margin-bottom: 20px;
+  color: rgb(178, 221, 225);
+}
+
+.section-1 {
+  background-color: rgb(204, 229, 255);
+  padding: 20px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image img {
+  width: 350px;
+  height: auto;
+  padding: 40px 20px;
+}
+
+.section-2 {
+  background-color: rgb(208, 240, 239);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.images {
+  width: 300px;
+  height: auto;
+}
+
+.caracteristicas img {
+  width: 100%;
+  height: auto;
 }
