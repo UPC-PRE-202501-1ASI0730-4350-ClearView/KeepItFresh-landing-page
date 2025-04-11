@@ -45,7 +45,11 @@ body {
 }
 
 .menu.scrolled {
-  background-color: rgb(61, 144, 182, 0.5); /* Fondo semitransparente después del scroll */
+  background-color: rgb(173, 211, 252); /* Fondo semitransparente después del scroll */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .menu .logo {
