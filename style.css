@@ -270,9 +270,92 @@ section p {
 .images {
   width: 300px;
   height: auto;
+  
 }
 
 .caracteristicas img {
   width: 100%;
   height: auto;
+  border-radius: 5%;
 }
+
+@media (max-width: 1024px) {
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-1,
+  .section-2 {
+    flex-direction: column;
+  }
+
+  .image img,
+  .images {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu .navbar ul {
+    flex-direction: column;
+    background-color: rgba(173, 211, 252, 0.95);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .menu .navbar ul.active {
+    display: flex;
+  }
+
+  .menu label {
+    display: block;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .icons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-txt h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .caracteristicas {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-txt h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .header-txt p {
+    font-size: 16px;
+  }
+
+  .esencia,
+  .caracteristicas {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .image img,
+  .images {
+    width: 100%;
+  }
+}
+
