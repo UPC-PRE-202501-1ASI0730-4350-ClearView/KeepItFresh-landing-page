@@ -40,6 +40,10 @@ html {
   background-color: rgb(173, 211, 252);
 }
 
+.menu-icono {
+  width: 25px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -338,5 +342,54 @@ section p {
   .image img,
   .images {
     width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #3f3f3f48;
+    backdrop-filter: blur(5px);
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+  .icons {
+    display: none;
+  }
+  .header {
+    padding: 80px 30px 50px 30px;
+    align-items: self-start;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-txt {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .header-txt h1 {
+    margin-bottom: 10px;
+  }
+  .images {
+    position: initial;
+    width: 300px;
+    height: 300px;
+  }
+  .rows {
+    display: none;
   }
 }

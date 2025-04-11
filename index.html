@@ -8,10 +8,16 @@
     <title>KeepItFresh | Optimiza tu restaurante con inteligencia</title>
 
     <!-- Meta Descripción -->
-    <meta name="description" content="KeepItFresh es una solución inteligente para restaurantes que optimiza la gestión de inventario, temperatura y atención al cliente." />
+    <meta
+      name="description"
+      content="KeepItFresh es una solución inteligente para restaurantes que optimiza la gestión de inventario, temperatura y atención al cliente."
+    />
 
     <!-- Palabras clave -->
-    <meta name="keywords" content="KeepItFresh, gestión de restaurantes, inventario, temperatura, atención al cliente, tecnología para restaurantes" />
+    <meta
+      name="keywords"
+      content="KeepItFresh, gestión de restaurantes, inventario, temperatura, atención al cliente, tecnología para restaurantes"
+    />
 
     <!-- Autor -->
     <meta name="author" content="Equipo KeepItFresh" />
@@ -20,36 +26,61 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="KeepItFresh | Optimiza tu restaurante con inteligencia" />
-    <meta property="og:description" content="Solución inteligente para gestión de inventario, temperatura y atención al cliente en restaurantes." />
+    <meta
+      property="og:title"
+      content="KeepItFresh | Optimiza tu restaurante con inteligencia"
+    />
+    <meta
+      property="og:description"
+      content="Solución inteligente para gestión de inventario, temperatura y atención al cliente en restaurantes."
+    />
     <meta property="og:image" content="https://tusitio.com/img/logo.png" />
     <meta property="og:url" content="https://tusitio.com/" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="KeepItFresh | Optimiza tu restaurante con inteligencia" />
-    <meta name="twitter:description" content="Solución inteligente para restaurantes. Gestión de inventario, temperatura y más." />
+    <meta
+      name="twitter:title"
+      content="KeepItFresh | Optimiza tu restaurante con inteligencia"
+    />
+    <meta
+      name="twitter:description"
+      content="Solución inteligente para restaurantes. Gestión de inventario, temperatura y más."
+    />
     <meta name="twitter:image" content="https://tusitio.com/img/logo.png" />
 
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
 
     <!-- Estilos e íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="top"></div>
 
     <header class="header">
+      <div class="hamurger">
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="img/menu.png" class="menu-icono" alt="" />
+        </label>
+      </div>
       <div class="menu">
         <div class="container">
           <a href="#top" class="logo">KeepItFresh</a>
           <nav class="navbar" id="main">
             <ul>
               <li><a href="#about" data-i18n="menu.about">Acerca</a></li>
-              <li><a href="#features" data-i18n="menu.features">Características</a></li>
+              <li>
+                <a href="#features" data-i18n="menu.features"
+                  >Características</a
+                >
+              </li>
               <li><a href="#contact" data-i18n="menu.contact">Contacto</a></li>
               <li>
                 <select id="language-switcher" aria-label="Selector de idioma">
@@ -88,11 +119,11 @@
               <h2 data-i18n="about.title">Nuestra esencia</h2>
               <p data-i18n="about.desc">
                 Somos una solución inteligente que se encargará de optimizar la
-                gestión de los inventarios de restaurantes. Además de permitir hacer
-                un seguimiento en tiempo real de los productos, evitando así la
-                pérdida de los alimentos. Una solución óptima la cual facilita el
-                proceso de atención al cliente proporcionándole una herramienta fácil
-                y didáctica.
+                gestión de los inventarios de restaurantes. Además de permitir
+                hacer un seguimiento en tiempo real de los productos, evitando
+                así la pérdida de los alimentos. Una solución óptima la cual
+                facilita el proceso de atención al cliente proporcionándole una
+                herramienta fácil y didáctica.
               </p>
             </section>
           </div>
@@ -109,7 +140,9 @@
             <ul>
               <li data-i18n="features.track">Seguimiento en tiempo real</li>
               <li data-i18n="features.alerts">Alertas y notificaciones.</li>
-              <li data-i18n="features.integration">Manejo de temperatura y fecha de caducidad.</li>
+              <li data-i18n="features.integration">
+                Manejo de temperatura y fecha de caducidad.
+              </li>
               <li data-i18n="features.notifications">Gestión del inventario</li>
             </ul>
           </section>
@@ -132,8 +165,20 @@
         <h2 data-i18n="contact.title">Contáctanos</h2>
         <form id="form">
           <label for="email" class="visually-hidden">Correo electrónico</label>
-          <input type="email" id="email" placeholder="Correo" aria-label="Correo electrónico" required />
-          <button type="submit" data-i18n="contact.send" aria-label="Enviar formulario">Enviar</button>
+          <input
+            type="email"
+            id="email"
+            placeholder="Correo"
+            aria-label="Correo electrónico"
+            required
+          />
+          <button
+            type="submit"
+            data-i18n="contact.send"
+            aria-label="Enviar formulario"
+          >
+            Enviar
+          </button>
         </form>
       </section>
     </main>
