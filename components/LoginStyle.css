@@ -99,6 +99,11 @@ body {
   font-weight: 600;
 }
 
+.wrapper .btn:hover {
+  background-color: #005fcc;
+  color: #fff;
+}
+
 .wrapper .login-link {
   font-size: 14.5px;
   text-align: center;
@@ -113,4 +118,8 @@ body {
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+
+.login-link a {
+  cursor: pointer;
 }
