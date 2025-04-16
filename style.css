@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ------------------ MENÚ ------------------ */
 .menu {
   position: fixed;
   top: 0;
@@ -105,10 +106,6 @@ html {
   display: none;
 }
 
-.menu-icono {
-  width: 25px;
-}
-
 .menu label {
   cursor: pointer;
   display: none;
@@ -117,6 +114,7 @@ html {
   padding: 10px;
 }
 
+/* ------------------ HEADER ------------------ */
 .header {
   background-image: url(img/almacen.png);
   background-position: center center;
@@ -139,7 +137,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(51, 184, 255);
-  margin-bottom: 25px;
+  margin-top: 140px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -150,6 +148,7 @@ html {
   margin-bottom: 25px;
 }
 
+/* ------------------ SECCIONES GENERALES ------------------ */
 nav ul {
   list-style: none;
   display: flex;
@@ -184,6 +183,7 @@ section p {
   width: 100%;
 }
 
+/* ------------------ ANIMACIONES ------------------ */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -195,10 +195,11 @@ section p {
   transform: translateY(0);
 }
 
+/* ------------------ ESENCIA ------------------ */
 .esencia {
   background-color: #f3f3f3;
   padding: 25px;
-  margin: 55px;
+  margin: 55px auto;
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -209,10 +210,11 @@ section p {
   margin-bottom: 20px;
 }
 
+/* ------------------ CARACTERISTICAS ------------------ */
 .caracteristicas {
   background-color: #f3f3f3;
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -228,6 +230,13 @@ section p {
   color: rgb(178, 221, 225);
 }
 
+.caracteristicas img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+/* ------------------ SECCIONES ALTAS ------------------ */
 .section-1,
 .section-2 {
   padding: 20px 40px;
@@ -260,14 +269,7 @@ section p {
   padding: 40px 20px;
 }
 
-.caracteristicas img {
-  width: 100%;
-  height: auto;
-  border-radius: 5%;
-}
-
-/* --- MEDIA QUERIES --- */
-
+/* ------------------ MEDIA QUERIES ------------------ */
 @media (max-width: 1024px) {
   .section-content {
     flex-direction: column;
@@ -343,8 +345,14 @@ section p {
   .images {
     width: 100%;
   }
+
+  .create-account button {
+    width: 100%;
+    height: auto;
+  }
 }
 
+/* ------------------ SOBRE NOSOTROS ------------------ */
 #aboutus {
   background-color: #f0ece5;
   padding: 50px 0;
@@ -358,7 +366,7 @@ section p {
   text-align: center;
 }
 
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -387,4 +395,29 @@ section p {
   font-size: 1rem;
   color: black;
   text-align: center;
+}
+
+/* ------------------ BOTÓN CTA ------------------ */
+.create-account {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.create-account button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 20%;
+  height: 50px;
+}
+
+.create-account button:hover {
+  background-color: #005fcc;
 }
