@@ -57,11 +57,11 @@
     "vision_title": "Vision",
     "vision_desc": "To be the leading platform in intelligent solutions for restaurants globally, recognized for our ability to transform daily operations and contribute to a more sustainable future for the sector.",
     "values_title": "Values",
-    "values_innovation": "<strong>1.Innovation:</strong> We constantly evolve with the gastronomic sector.",
-    "values_accessibility": "<strong>2.Accessibility:</strong> Quality at fair prices.",
-    "values_customer_focus": "<strong>3.Customer Focus:</strong> Practical and easy solutions.",
-    "values_quality": "<strong>4.Quality:</strong> High standards in everything.",
-    "values_responsibility": "<strong>5.Responsibility:</strong> Sustainability and less waste."
+    "values_innovation": "1.Innovation: We constantly evolve with the gastronomic sector.",
+    "values_accessibility": "2.Accessibility: Quality at fair prices.",
+    "values_customer_focus": "3.Customer Focus: Practical and easy solutions.",
+    "values_quality": "4.Quality: High standards in everything.",
+    "values_responsibility": "5.Responsibility: Sustainability and less waste."
   },
   "features": {
     "title": "Features",
