@@ -11,6 +11,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  background-color: #F5F5F7;
+  
 }
 
 html {
@@ -197,7 +199,7 @@ section p {
 
 /* ------------------ ESENCIA ------------------ */
 .esencia {
-  background-color: #f3f3f3;
+  background-color: white;
   padding: 25px;
   margin: 55px auto;
   max-width: 800px;
@@ -210,13 +212,29 @@ section p {
   margin-bottom: 20px;
 }
 
+.subtitle {
+  font-size: 2.5rem;
+  color: rgb(51, 184, 255);
+  text-align: center;
+}
+
+#about {
+  scroll-margin-top: 120px; /* o lo que mida tu header fijo */
+}
+
+.aboutTextBackground {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: black;
+  text-align: justify;
+}
 /* ------------------ CARACTERISTICAS ------------------ */
 .caracteristicas {
-  background-color: #f3f3f3;
+  background-color: white;
   padding: 20px;
   margin: 20px auto;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 18px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   display: flex;
@@ -227,7 +245,7 @@ section p {
 .caracteristicas h2 {
   text-align: start;
   margin-bottom: 20px;
-  color: rgb(178, 221, 225);
+  color: rgb(51, 184, 255);
 }
 
 .caracteristicas img {
@@ -244,14 +262,6 @@ section p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.section-1 {
-  background-color: rgb(204, 229, 255);
-}
-
-.section-2 {
-  background-color: rgb(208, 240, 239);
 }
 
 .section-content {
@@ -351,10 +361,10 @@ section p {
     height: auto;
   }
 }
+-->
 
 /* ------------------ SOBRE NOSOTROS ------------------ */
 #aboutus {
-  background-color: #f0ece5;
   padding: 50px 0;
   text-align: center;
 }
@@ -366,35 +376,52 @@ section p {
   text-align: center;
 }
 
-.cards {
+.card-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
 }
 
-.card {
-  background-color: #f3f3f3;
-  border-radius: 10px;
+.card-list .card-item {
+  background-color: white;
+  border-radius: 18px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  user-select: none;
+  height: 500px;
   text-align: center;
+  display: block;
 }
 
-.card img {
+.card-image {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 192px;
+  height: 192px;
   object-fit: cover;
   margin-bottom: 15px;
 }
 
-.textBackground {
-  margin-top: 10px;
-  font-size: 1rem;
+.name {
+  margin-bottom: 15px;
+  font-size: 2.188rem;
   color: black;
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.textBackgroundSubtitle {
+  margin-top: 10px;
+  font-size: 1.563rem;
+  color: black;
+  text-align: center;
+}
+
+.textBackground {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: black;
+  text-align: justify;
 }
 
 /* ------------------ BOTÓN CTA ------------------ */
@@ -463,4 +490,146 @@ section p {
     width: 100%;
     border-bottom: 1px solid #444;
   }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  width: 480px;
+  min-height: 300px;
+  height: auto;
+  text-align: center;
+  display: block;
+}
+
+.card img{
+  width: 80%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-top: 50px;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: rgb(51, 184, 255);
+  text-align: center;
+}
+
+.subtitleAbout{
+  font-size: 2.5rem;
+  margin-top: 60px;
+  color: rgb(51, 184, 255);
+  text-align: center;
+}
+
+.card .values{
+  width: 80%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-top: 20px;
+}
+
+.textBackgroundS {
+  margin-top: 40px;
+  font-size: 1.563rem;
+  color: rgb(51, 184, 255);
+  text-align: center;
+}
+
+.textB {
+  margin-top: 25px;
+  font-size: 1.25rem;
+  color: black;
+  text-align: justify;
+}
+
+.card-img {
+  border-radius: 18%;
+  width: 192px;
+  height: 192px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.contactTitle{
+  font-size: 2.5rem;
+  margin-top: 70px;
+  color: rgb(51, 184, 255);
+  text-align: center;
+}
+
+.contact {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 20%;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #2980b9;
 }

@@ -1,4 +1,14 @@
 {
+  "meta": {
+    "title": "KeepItFresh | Optimize your restaurant with intelligence",
+    "description": "KeepItFresh is an intelligent solution for restaurants that optimizes inventory management, temperature control, and customer service.",
+    "keywords": "KeepItFresh, restaurant management, inventory, temperature, customer service, restaurant technology",
+    "author": "KeepItFresh Team",
+    "og_title": "KeepItFresh | Optimize your restaurant with intelligence",
+    "og_description": "Intelligent solution for inventory management, temperature control, and customer service in restaurants.",
+    "twitter_title": "KeepItFresh | Optimize your restaurant with intelligence",
+    "twitter_description": "Intelligent solution for restaurants. Inventory management, temperature control, and more."
+  },
   "title": "KeepItFresh",
   "menu": {
     "aboutus": "Team",
@@ -8,21 +18,75 @@
   },
   "slogan": {
     "title": "Optimize your restaurant with intelligence and freshness",
-    "desc": "KeepItFresh is an intelligent solution that optimizes inventory management, temperature control, and customer service in restaurants."
+    "desc": "KeepItFresh is an intelligent solution that optimizes inventory management, temperature control, and customer service in restaurants.",
+    "register": "Register now!"
+  },
+  "team": {
+    "title": "ClearView",
+    "marco": {
+      "name": "Marco Nakasone",
+      "subtitle": "Fullstack developer in training",
+      "desc": "Curious and eager to learn. Enjoys participating in all stages of development and contributing new ideas to the team."
+    },
+    "pedro": {
+      "name": "Pedro Guia",
+      "subtitle": "Mobile developer",
+      "desc": "Interested in developing apps for cell phones. Always looking for ways to make applications faster, more useful, and accessible."
+    },
+    "ayrton": {
+      "name": "Ayrton Briceño",
+      "subtitle": "Team leader",
+      "desc": "Student with a passion for project management and backend development. Always motivating the group and seeking solutions to team challenges."
+    },
+    "werner": {
+      "name": "Werner Lang",
+      "subtitle": "Database and security specialist",
+      "desc": "Interested in everything related to data protection and efficient information management. Always seeks to ensure the system is reliable and secure."
+    },
+    "ernesto": {
+      "name": "Ernesto Rodas",
+      "subtitle": "Front-end designer and developer",
+      "desc": "Passionate about design and user experience. Enjoys creating clean and easy-to-use interfaces."
+    }
   },
   "about": {
     "title": "Our Essence",
-    "desc": "We are an intelligent solution that optimizes restaurant inventory management. It also allows real-time tracking of products, preventing food loss. An optimal solution that facilitates customer service by providing an easy and interactive tool."
+    "desc": "We are an intelligent solution that will optimize the management of restaurant inventories. In addition to allowing real-time tracking of products, thus avoiding food loss. An optimal solution that facilitates the customer service process by providing an easy and interactive tool.",
+    "mission_title": "Mission",
+    "mission_desc": "To drive efficiency and sustainability in the restaurant industry through innovative technological solutions that optimize resource management and improve the customer experience.",
+    "vision_title": "Vision",
+    "vision_desc": "To be the leading platform in intelligent solutions for restaurants globally, recognized for our ability to transform daily operations and contribute to a more sustainable future for the sector.",
+    "values_title": "Values",
+    "values_innovation": "<strong>1.Innovation:</strong> We constantly evolve with the gastronomic sector.",
+    "values_accessibility": "<strong>2.Accessibility:</strong> Quality at fair prices.",
+    "values_customer_focus": "<strong>3.Customer Focus:</strong> Practical and easy solutions.",
+    "values_quality": "<strong>4.Quality:</strong> High standards in everything.",
+    "values_responsibility": "<strong>5.Responsibility:</strong> Sustainability and less waste."
   },
   "features": {
     "title": "Features",
-    "track": "Real-time tracking.",
-    "alerts": "Alerts and notifications.",
-    "integration": "Temperature and expiration date monitoring.",
-    "notifications": "Inventory management."
+    "track_title": "Real-time tracking",
+    "track_desc": "Monitor the status of products minute by minute to make quick and accurate decisions.",
+    "temperature_title": "Temperature management",
+    "temperature_desc": "Receive automatic alerts for any irregularities or when the expiration date is approaching.",
+    "alerts_title": "Alerts and notifications",
+    "alerts_desc": "Easily control key conditions that affect inventory quality, such as temperature and storage time.",
+    "inventory_title": "Inventory management",
+    "inventory_desc": "Optimize your stock levels, reduce waste, and improve purchasing planning.",
+    "waiter_title": "Call the waiter",
+    "waiter_desc": "A device that the customer presses to easily call the waiter."
   },
   "contact": {
-    "title": "Contact Us",
-    "send": "Send"
+    "title": "ANY QUESTIONS?",
+    "subtitle": "Send us an email:",
+    "form": {
+      "name": "Full Name",
+      "name_placeholder": "Enter your full name",
+      "email": "Email Address",
+      "email_placeholder": "Enter your email address",
+      "details": "Details",
+      "details_placeholder": "Enter your details",
+      "send": "Send"
+    }
   }
 }

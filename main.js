@@ -95,11 +95,31 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
-  const navbar = document.querySelector(".navbar");
+document.querySelector('.hamburger').addEventListener('click', () => {
+  document.querySelector('.menu .navbar ul').classList.toggle('active');
+});
 
-  hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-  });
+new Swiper('.card-wrapper', {
+  loop: true,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    },
+    
+  }
+
 });
