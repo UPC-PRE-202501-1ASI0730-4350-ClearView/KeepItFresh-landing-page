@@ -441,15 +441,34 @@ section p {
   border-radius: 100px;
   cursor: pointer;
   font-weight: bold;
-  width: 20%;
-  height: 50px;
+  height: auto; 
+  width: auto; 
+  min-width: 150px; 
+  display: inline-block; 
 }
 
 .create-account button:hover {
   background-color: #005fcc;
 }
 
-/* Ícono del menú hamburguesa */
+
+@media (max-width: 768px) {
+  .create-account button {
+      width: 80%; 
+      display: block;
+      margin: 10px auto; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .create-account button {
+      font-size: 14px; 
+      padding: 10px 15px;
+      min-width: auto; 
+  }
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -458,7 +477,6 @@ section p {
   padding: 20px;
 }
 
-/* Estilos del menú para pantallas pequeñas */
 @media (max-width: 768px) {
   .menu .navbar {
     display: none;
@@ -617,7 +635,7 @@ textarea {
   min-height: 80px;
 }
 
-button {
+.contact button {
   padding: 12px 20px;
   font-size: 16px;
   background-color: #007bff;
@@ -626,10 +644,37 @@ button {
   border-radius: 100px;
   cursor: pointer;
   font-weight: bold;
-  width: 20%;
-  height: 50px;
+  height: auto; 
+  width: auto; 
+  min-width: 150px; 
+}
+
+.contact button:hover {
+  background-color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+  .contact button {
+      width: 80%; 
+      display: block; 
+      margin: 10px auto; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact button {
+      font-size: 14px; 
+      padding: 10px 15px;
+      min-width: auto; 
+  }
 }
 
 button:hover {
   background-color: #2980b9;
+}
+
+.section{
+  border-radius: 18px;
 }
