@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title data-i18n="meta.title">KeepItFresh | Optimiza tu restaurante con inteligencia</title>
+    <title data-i18n="meta.title">
+      KeepItFresh | Optimiza tu restaurante con inteligencia
+    </title>
 
     <meta
-        name="description"
-        content="KeepItFresh es una solución inteligente para restaurantes que optimiza la gestión de inventario, temperatura y atención al cliente."
-        data-i18n="meta.description"
+      name="description"
+      content="KeepItFresh es una solución inteligente para restaurantes que optimiza la gestión de inventario, temperatura y atención al cliente."
+      data-i18n="meta.description"
     />
 
     <meta
-        name="keywords"
-        content="KeepItFresh, gestión de restaurantes, inventario, temperatura, atención al cliente, tecnología para restaurantes"
-        data-i18n="meta.keywords"
+      name="keywords"
+      content="KeepItFresh, gestión de restaurantes, inventario, temperatura, atención al cliente, tecnología para restaurantes"
+      data-i18n="meta.keywords"
     />
 
     <meta name="author" content="Equipo KeepItFresh" data-i18n="meta.author" />
@@ -23,14 +25,14 @@
     <meta name="robots" content="index, follow" />
 
     <meta
-        property="og:title"
-        content="KeepItFresh | Optimiza tu restaurante con inteligencia"
-        data-i18n="meta.og_title"
+      property="og:title"
+      content="KeepItFresh | Optimiza tu restaurante con inteligencia"
+      data-i18n="meta.og_title"
     />
     <meta
-        property="og:description"
-        content="Solución inteligente para gestión de inventario, temperatura y atención al cliente en restaurantes."
-        data-i18n="meta.og_description"
+      property="og:description"
+      content="Solución inteligente para gestión de inventario, temperatura y atención al cliente en restaurantes."
+      data-i18n="meta.og_description"
     />
     <meta property="og:image" content="https://tusitio.com/img/logo.png" />
     <meta property="og:url" content="https://tusitio.com/" />
@@ -38,277 +40,373 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
-        name="twitter:title"
-        content="KeepItFresh | Optimiza tu restaurante con inteligencia"
-        data-i18n="meta.twitter_title"
+      name="twitter:title"
+      content="KeepItFresh | Optimiza tu restaurante con inteligencia"
+      data-i18n="meta.twitter_title"
     />
     <meta
-        name="twitter:description"
-        content="Solución inteligente para restaurantes. Gestión de inventario, temperatura y más."
-        data-i18n="meta.twitter_description"
+      name="twitter:description"
+      content="Solución inteligente para restaurantes. Gestión de inventario, temperatura y más."
+      data-i18n="meta.twitter_description"
     />
     <meta name="twitter:image" content="https://tusitio.com/img/logo.png" />
 
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
 
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <link
-        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-        rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="top"></div>
 
     <header class="header">
-        <div class="menu">
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="container">
-                <a href="#top" class="logo" data-i18n="title">KeepItFresh</a>
-                <nav class="navbar" id="main">
-                    <ul>
-                        <li><a href="#aboutus" data-i18n="menu.aboutus">Equipo</a></li>
-                        <li><a href="#about" data-i18n="menu.about">Acerca</a></li>
-                        <li>
-                            <a href="#features" data-i18n="menu.features"
-                                >Características</a
-                            >
-                        </li>
-                        <li><a href="#contact" data-i18n="menu.contact">Contáctanos</a></li>
-                        <li>
-                            <select id="language-switcher" aria-label="Selector de idioma">
-                                <option value="es">Español</option>
-                                <option value="en">English</option>
-                            </select>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="icons">
-                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </div>
-            </div>
+      <div class="menu">
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
-
-        <div id="slogan" class="header-content container">
-            <div class="header-txt">
-                <h1 data-i18n="slogan.title">
-                    Optimiza tu restaurante con inteligencia y frescura
-                </h1>
-                <p data-i18n="slogan.desc">
-                    KeepItFresh es una solución inteligente que optimiza la gestión de
-                    inventario, temperatura y atención al cliente en restaurantes.
-                </p>
-
-                <section class="create-account">
-                    <button
-                        onclick="window.location.href='components/RegisterComponent.html'"
-                        data-i18n="slogan.register"
-                    >
-                        ¡Regístrate ahora!
-                    </button>
-                </section>
-            </div>
+        <div class="container">
+          <a href="#top" class="logo" data-i18n="title">KeepItFresh</a>
+          <nav class="navbar" id="main">
+            <ul>
+              <li><a href="#aboutus" data-i18n="menu.aboutus">Equipo</a></li>
+              <li><a href="#about" data-i18n="menu.about">Acerca</a></li>
+              <li>
+                <a href="#features" data-i18n="menu.features"
+                  >Características</a
+                >
+              </li>
+              <li>
+                <a href="#contact" data-i18n="menu.contact">Contáctanos</a>
+              </li>
+              <li>
+                <select id="language-switcher" aria-label="Selector de idioma">
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+          <div class="icons">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </div>
         </div>
+      </div>
+
+      <div id="slogan" class="header-content container">
+        <div class="header-txt">
+          <h1 data-i18n="slogan.title">
+            Optimiza tu restaurante con inteligencia y frescura
+          </h1>
+          <p data-i18n="slogan.desc">
+            KeepItFresh es una solución inteligente que optimiza la gestión de
+            inventario, temperatura y atención al cliente en restaurantes.
+          </p>
+
+          <section class="create-account">
+            <button
+              onclick="window.location.href='components/RegisterComponent.html'"
+              data-i18n="slogan.register"
+            >
+              ¡Regístrate ahora!
+            </button>
+          </section>
+        </div>
+      </div>
     </header>
 
     <main>
-        <div id="aboutus" class="container swiper">
-            <h1 class="team" data-i18n="team.title">ClearView</h1>
-            <div class="card-wrapper">
-                <ul class="card-list swiper-wrapper">
-                    <li class="card-item swiper-slide">
-                        <h2 class="name" data-i18n="team.marco.name">Marco Nakasone</h2>
-                        <img src="img/marco.jpg" class="card-image" alt="Marco Nakasone" />
-                        <h2 class="textBackgroundSubtitle" data-i18n="team.marco.subtitle">Desarrollador fullstack en formación</h2>
-                        <p class="textBackground" data-i18n="team.marco.desc">
-                            Curioso y con muchas ganas de aprender. Le gusta participar en todas las etapas del desarrollo y aportar ideas nuevas al equipo.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <h2 class="name" data-i18n="team.pedro.name">Pedro Guia</h2>
-                        <img src="img/pedro.jpg" class="card-image" alt="Pedro Guia" />
-                        <h2 class="textBackgroundSubtitle" data-i18n="team.pedro.subtitle">Desarrollador móvil</h2>
-                        <p class="textBackground" data-i18n="team.pedro.desc">
-                            Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones más rápidas, útiles y accesibles.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <h2 class="name" data-i18n="team.ayrton.name">Ayrton Briceño</h2>
-                        <img src="img/ayrton.jpg" class="card-image" alt="Ayrton Briceño" />
-                        <h2 class="textBackgroundSubtitle" data-i18n="team.ayrton.subtitle">Líder del equipo</h2>
-                        <p class="textBackground" data-i18n="team.ayrton.desc">
-                            Estudiante con gusto por la gestión de proyectos y el desarrollo backend. Siempre está motivando al grupo y buscando soluciones a los desafíos del equipo.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <h2 class="name" data-i18n="team.werner.name">Werner Lang</h2>
-                        <img src="img/werner.jpg" class="card-image" alt="Werner Lang" />
-                        <h2 class="textBackgroundSubtitle" data-i18n="team.werner.subtitle">Especialista en bases de datos y seguridad</h2>
-                        <p class="textBackground" data-i18n="team.werner.desc">
-                            Le interesa todo lo relacionado con la protección de datos y el manejo eficiente de la información. Siempre busca asegurar que el sistema sea confiable y seguro.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <h2 class="name" data-i18n="team.ernesto.name">Ernesto Rodas</h2>
-                        <img src="img/ernesto.jpg" class="card-image" alt="Ernesto Rodas" />
-                        <h2 class="textBackgroundSubtitle" data-i18n="team.ernesto.subtitle">Diseñador y desarrollador front-end</h2>
-                        <p class="textBackground" data-i18n="team.ernesto.desc">
-                            Apasionado por el diseño y la experiencia del usuario. Le gusta crear interfaces limpias y que sean fáciles de usar.
-                        </p>
-                    </li>
-                </ul>
+      <div id="aboutus" class="container swiper">
+        <h1 class="team" data-i18n="team.title">ClearView</h1>
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <h2 class="name" data-i18n="team.marco.name">Marco Nakasone</h2>
+              <img
+                src="img/marco.jpg"
+                class="card-image"
+                alt="Marco Nakasone"
+              />
+              <h2
+                class="textBackgroundSubtitle"
+                data-i18n="team.marco.subtitle"
+              >
+                Desarrollador fullstack en formación
+              </h2>
+              <p class="textBackground" data-i18n="team.marco.desc">
+                Curioso y con muchas ganas de aprender. Le gusta participar en
+                todas las etapas del desarrollo y aportar ideas nuevas al
+                equipo.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <h2 class="name" data-i18n="team.pedro.name">Pedro Guia</h2>
+              <img src="img/pedro.jpg" class="card-image" alt="Pedro Guia" />
+              <h2
+                class="textBackgroundSubtitle"
+                data-i18n="team.pedro.subtitle"
+              >
+                Desarrollador móvil
+              </h2>
+              <p class="textBackground" data-i18n="team.pedro.desc">
+                Interesado en el desarrollo de apps para celulares. Siempre está
+                buscando formas de hacer las aplicaciones más rápidas, útiles y
+                accesibles.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <h2 class="name" data-i18n="team.ayrton.name">Ayrton Briceño</h2>
+              <img
+                src="img/ayrton.jpg"
+                class="card-image"
+                alt="Ayrton Briceño"
+              />
+              <h2
+                class="textBackgroundSubtitle"
+                data-i18n="team.ayrton.subtitle"
+              >
+                Líder del equipo
+              </h2>
+              <p class="textBackground" data-i18n="team.ayrton.desc">
+                Estudiante con gusto por la gestión de proyectos y el desarrollo
+                backend. Siempre está motivando al grupo y buscando soluciones a
+                los desafíos del equipo.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <h2 class="name" data-i18n="team.werner.name">Werner Lang</h2>
+              <img src="img/werner.jpg" class="card-image" alt="Werner Lang" />
+              <h2
+                class="textBackgroundSubtitle"
+                data-i18n="team.werner.subtitle"
+              >
+                Especialista en bases de datos y seguridad
+              </h2>
+              <p class="textBackground" data-i18n="team.werner.desc">
+                Le interesa todo lo relacionado con la protección de datos y el
+                manejo eficiente de la información. Siempre busca asegurar que
+                el sistema sea confiable y seguro.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <h2 class="name" data-i18n="team.ernesto.name">Ernesto Rodas</h2>
+              <img
+                src="img/ernesto.jpg"
+                class="card-image"
+                alt="Ernesto Rodas"
+              />
+              <h2
+                class="textBackgroundSubtitle"
+                data-i18n="team.ernesto.subtitle"
+              >
+                Diseñador y desarrollador front-end
+              </h2>
+              <p class="textBackground" data-i18n="team.ernesto.desc">
+                Apasionado por el diseño y la experiencia del usuario. Le gusta
+                crear interfaces limpias y que sean fáciles de usar.
+              </p>
+            </li>
+          </ul>
 
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
+      </div>
 
-        <div id="about">
-            <div class="section-content">
-                <div class="esencia">
-                    <section class="reveal">
-                        <h2 data-i18n="about.title">Nuestra esencia</h2>
-                        <p data-i18n="about.desc">
-                            Somos una solución inteligente que se encargará de optimizar la
-                            gestión de los inventarios de restaurantes. Además de permitir
-                            hacer un seguimiento en tiempo real de los productos, evitando
-                            así la pérdida de los alimentos. Una solución óptima la cual
-                            facilita el proceso de atención al cliente proporcionándole una
-                            herramienta fácil y didáctica.
-                        </p>
-                    </section>
-                </div>
-                <div class="image">
-                    <img src="img/logo.png" alt="Logo de KeepItFresh" />
-                </div>
-            </div>
-            <section class="cards">
-                <div class="card">
-                    <h2 data-i18n="about.mission_title" class="subtitle">Misión</h2>
-                    <div class="text">
-                        <p class="textBackground" data-i18n="about.mission_desc">
-                            Impulsar la eficiencia y sostenibilidad en la industria
-                            restaurantera a través de soluciones tecnológicas innovadoras que
-                            optimicen la gestión de recursos y mejoren la experiencia del
-                            cliente.
-                        </p>
-                    </div>
-                    <img src="img/mision.png" alt="Misión">
-                </div>
-                <div class="card">
-                    <h2 data-i18n="about.vision_title" class="subtitle">Visión</h2>
-                    <div class="text">
-                        <p class="textBackground" data-i18n="about.vision_desc">
-                            Ser la plataforma líder en soluciones inteligentes para
-                            restaurantes a nivel global, reconocida por nuestra capacidad de
-                            transformar la operación diaria y contribuir a un futuro más
-                            sostenible para el sector.
-                        </p>
-                    </div>
-                    <img src="img/vision.png" alt="Visión">
-                </div>
-                <div class="card">
-                    <h2 data-i18n="about.values_title" class="subtitle">Valores</h2>
-                    <div class="text">
-                        <ul class="textBackground">
-                            <li data-i18n="about.values_innovation">1.Innovación: Evolucionamos constantemente con el sector gastronómico.</li>
-                            <li data-i18n="about.values_accessibility">2.Accesibilidad: Calidad a precios justos.</li>
-                            <li data-i18n="about.values_customer_focus">3.Orientación al cliente: Soluciones prácticas y fáciles.</li>
-                            <li data-i18n="about.values_quality">4.Calidad: Altos estándares en todo.</li>
-                            <li data-i18n="about.values_responsibility">5.Responsabilidad: Sostenibilidad y menos desperdicio.</li>
-                        </ul>
-                    </div>
-                    <img src="img/valores.png" class="values" alt="Valores">
-                </div>
+      <div id="about">
+        <div class="section-content">
+          <div class="esencia">
+            <section class="reveal">
+              <h2 data-i18n="about.title">Nuestra esencia</h2>
+              <p data-i18n="about.desc">
+                Somos una solución inteligente que se encargará de optimizar la
+                gestión de los inventarios de restaurantes. Además de permitir
+                hacer un seguimiento en tiempo real de los productos, evitando
+                así la pérdida de los alimentos. Una solución óptima la cual
+                facilita el proceso de atención al cliente proporcionándole una
+                herramienta fácil y didáctica.
+              </p>
             </section>
+          </div>
+          <div class="image">
+            <img src="img/logo.png" alt="Logo de KeepItFresh" />
+          </div>
         </div>
-
-        <div id="features" class="container swiper">
-            <h1 class="team" data-i18n="features.title">Características</h1>
-            <div class="card-wrapper">
-                <ul class="card-list swiper-wrapper">
-                    <li class="card-item swiper-slide">
-                        <img src="img/tracking.png" class="card-img" alt="Seguimiento en tiempo real" />
-                        <h2 class="textBackgroundS" data-i18n="features.track_title">Seguimiento en tiempo real</h2>
-                        <p class="textB" data-i18n="features.track_desc">
-                            Monitorea el estado de los productos minuto a minuto para tomar decisiones rápidas y acertadas.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <img src="img/temperature.png" class="card-img" alt="Manejo de temperatura" />
-                        <h2 class="textBackgroundS" data-i18n="features.temperature_title">Manejo de temperatura</h2>
-                        <p class="textB" data-i18n="features.temperature_desc">
-                            Recibe avisos automáticos ante cualquier irregularidad o cuando se acerque la fecha de vencimiento.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <img src="img/alert.png" class="card-img" alt="Alertas y notificaciones" />
-                        <h2 class="textBackgroundS" data-i18n="features.alerts_title">Alertas y notificaciones</h2>
-                        <p class="textB" data-i18n="features.alerts_desc">
-                            Controla fácilmente las condiciones clave que afectan la calidad del inventario, como la temperatura y el tiempo de almacenamiento.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <img src="img/inventory.png" class="card-img" alt="Gestión del inventario" />
-                        <h2 class="textBackgroundS" data-i18n="features.inventory_title">Gestión del inventario</h2>
-                        <p class="textB" data-i18n="features.inventory_desc">
-                            Optimiza tus niveles de stock, reduce el desperdicio y mejora la planificación de compras.
-                        </p>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <img src="img/bton.png" class="card-img" alt="Llamado al mozo" />
-                        <h2 class="textBackgroundS" data-i18n="features.waiter_title">Llamado al mozo</h2>
-                        <p class="textB" data-i18n="features.waiter_desc">
-                            Un dispositivo que el cliente presiona para poder llamar al mozo con mayor facilidad.
-                        </p>
-                    </li>
-                </ul>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+        <section class="cards">
+          <div class="card">
+            <h2 data-i18n="about.mission_title" class="subtitle">Misión</h2>
+            <div class="text">
+              <p class="textBackground" data-i18n="about.mission_desc">
+                Impulsar la eficiencia y sostenibilidad en la industria
+                restaurantera a través de soluciones tecnológicas innovadoras
+                que optimicen la gestión de recursos y mejoren la experiencia
+                del cliente.
+              </p>
             </div>
+            <img src="img/mision.png" alt="Misión" />
+          </div>
+          <div class="card">
+            <h2 data-i18n="about.vision_title" class="subtitle">Visión</h2>
+            <div class="text">
+              <p class="textBackground" data-i18n="about.vision_desc">
+                Ser la plataforma líder en soluciones inteligentes para
+                restaurantes a nivel global, reconocida por nuestra capacidad de
+                transformar la operación diaria y contribuir a un futuro más
+                sostenible para el sector.
+              </p>
+            </div>
+            <img src="img/vision.png" alt="Visión" />
+          </div>
+          <div class="card">
+            <h2 data-i18n="about.values_title" class="subtitle">Valores</h2>
+            <div class="text">
+              <ul class="textBackground">
+                <li data-i18n="about.values_innovation">
+                  1.Innovación: Evolucionamos constantemente con el sector
+                  gastronómico.
+                </li>
+                <li data-i18n="about.values_accessibility">
+                  2.Accesibilidad: Calidad a precios justos.
+                </li>
+                <li data-i18n="about.values_customer_focus">
+                  3.Orientación al cliente: Soluciones prácticas y fáciles.
+                </li>
+                <li data-i18n="about.values_quality">
+                  4.Calidad: Altos estándares en todo.
+                </li>
+                <li data-i18n="about.values_responsibility">
+                  5.Responsabilidad: Sostenibilidad y menos desperdicio.
+                </li>
+              </ul>
+            </div>
+            <img src="img/valores.png" class="values" alt="Valores" />
+          </div>
+        </section>
+      </div>
+
+      <div id="features" class="container swiper">
+        <h1 class="team" data-i18n="features.title">Características</h1>
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <img
+                src="img/tracking.png"
+                class="card-img"
+                alt="Seguimiento en tiempo real"
+              />
+              <h2 class="textBackgroundS" data-i18n="features.track_title">
+                Seguimiento en tiempo real
+              </h2>
+              <p class="textB" data-i18n="features.track_desc">
+                Monitorea el estado de los productos minuto a minuto para tomar
+                decisiones rápidas y acertadas.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <img
+                src="img/temperature.png"
+                class="card-img"
+                alt="Manejo de temperatura"
+              />
+              <h2
+                class="textBackgroundS"
+                data-i18n="features.temperature_title"
+              >
+                Manejo de temperatura
+              </h2>
+              <p class="textB" data-i18n="features.temperature_desc">
+                Recibe avisos automáticos ante cualquier irregularidad o cuando
+                se acerque la fecha de vencimiento.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <img
+                src="img/alert.png"
+                class="card-img"
+                alt="Alertas y notificaciones"
+              />
+              <h2 class="textBackgroundS" data-i18n="features.alerts_title">
+                Alertas y notificaciones
+              </h2>
+              <p class="textB" data-i18n="features.alerts_desc">
+                Controla fácilmente las condiciones clave que afectan la calidad
+                del inventario, como la temperatura y el tiempo de
+                almacenamiento.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <img
+                src="img/inventory.png"
+                class="card-img"
+                alt="Gestión del inventario"
+              />
+              <h2 class="textBackgroundS" data-i18n="features.inventory_title">
+                Gestión del inventario
+              </h2>
+              <p class="textB" data-i18n="features.inventory_desc">
+                Optimiza tus niveles de stock, reduce el desperdicio y mejora la
+                planificación de compras.
+              </p>
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/bton.png" class="card-img" alt="Llamado al mozo" />
+              <h2 class="textBackgroundS" data-i18n="features.waiter_title">
+                Llamado al mozo
+              </h2>
+              <p class="textB" data-i18n="features.waiter_desc">
+                Un dispositivo que el cliente presiona para poder llamar al mozo
+                con mayor facilidad.
+              </p>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-<section>
-
-    <div class="contact" id="contact">
-        <h2 class="contactTitle" data-i18n="contact.title">¿ALGUNA DUDA?</h2>
-        <p data-i18n="contact.subtitle">Mándanos un correo:</p>
-        <form>
+      </div>
+      <section>
+        <div class="contact" id="contact">
+          <h2 class="contactTitle" data-i18n="contact.title">¿ALGUNA DUDA?</h2>
+          <p data-i18n="contact.subtitle">Mándanos un correo:</p>
+          <form>
             <div class="form-group">
-                <label for="full-name" data-i18n="contact.form.name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" placeholder="Ingresa su nombre completo" data-i18n="contact.form.name_placeholder">
+              <label for="full-name" data-i18n="contact.form.name"
+                >Full Name</label
+              >
+              <input type="text" id="full-name" name="full-name" />
             </div>
             <div class="form-group">
-                <label for="email" data-i18n="contact.form.email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Ingresa su correo electronico" data-i18n="contact.form.email_placeholder">
+              <label for="email" data-i18n="contact.form.email"
+                >Email Address</label
+              >
+              <input type="email" id="email" name="email" />
             </div>
             <div class="form-group">
-                <label for="details" data-i18n="contact.form.details">Details</label>
-                <textarea id="details" name="details" placeholder="Ingresa tus detalles" data-i18n="contact.form.details_placeholder"></textarea>
+              <label for="details" data-i18n="contact.form.details"
+                >Details</label
+              >
+              <textarea id="details" name="details"></textarea>
             </div>
             <button type="submit" data-i18n="contact.form.send">Enviar</button>
-        </form>
-    </div>
-</section>
+          </form>
+        </div>
+      </section>
     </main>
 
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js" defer></script>
-</body>
+  </body>
 </html>
