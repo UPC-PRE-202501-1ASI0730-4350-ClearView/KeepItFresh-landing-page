@@ -478,35 +478,28 @@ section p {
 }
 
 @media (max-width: 768px) {
-  .menu .navbar {
+  #nav-list {
     display: none;
     flex-direction: column;
-    background-color: #2a2a2a;
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 100px;
+    right: 0;
     width: 100%;
+    padding: 10px 0;
+    z-index: 999;
   }
 
-  .menu .navbar.active {
+  #nav-list.active {
     display: flex;
   }
 
   .hamburger {
     display: block;
-  }
-
-  .menu .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu .navbar ul li a,
-  .menu .navbar li select {
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid #444;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 20px;
   }
 }
 

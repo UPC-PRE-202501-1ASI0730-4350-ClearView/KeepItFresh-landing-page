@@ -95,21 +95,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.querySelector(".hamburger").addEventListener("click", () => {
-  const menuUl = document.querySelector(".menu .navbar ul");
-  console.log("¡Se hizo clic en el hamburguesa!");
-  console.log("Elemento ul encontrado:", menuUl); // Para verificar si se encuentra el elemento
+const hamburger = document.getElementById("hamburger");
+const navbarList = document.getElementById("navbar-list");
 
-  if (menuUl) {
-    if (menuUl.style.display === "none" || menuUl.style.display === "") {
-      menuUl.style.display = "flex"; // O 'block', según tu CSS
-    } else {
-      menuUl.style.display = "none";
-    }
-  } else {
-    console.log("¡Error! No se encontró el elemento .menu .navbar ul");
-  }
-});
+if (hamburger && navbarList) {
+  hamburger.addEventListener("click", () => {
+    navbarList.classList.toggle("active");
+  });
+}
+
 
 new Swiper(".card-wrapper", {
   loop: true,
@@ -133,3 +127,6 @@ new Swiper(".card-wrapper", {
     },
   },
 });
+
+
+
